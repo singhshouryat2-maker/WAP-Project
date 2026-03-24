@@ -16,6 +16,3 @@ cd artifact-hunt
 npx serve .
 ```
 
-If npm dependencies are added in later milestones, `npm install` should be run before starting the project.
-
-This README is prepared for Milestone 1 planning, and full implementation will continue in the next milestones.
