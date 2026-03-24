@@ -16,4 +16,4 @@ cd artifact-hunt
 npx serve .
 ```
 
-This README is prepared for Milestone 1 planning, and full implementation will be completed in the next milestones.
+This readme is fully handwritten by Shourya Singh. Also, I used Github Public Api's for my project.
