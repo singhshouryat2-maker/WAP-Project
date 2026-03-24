@@ -1,79 +1,21 @@
-# Country Explorer JS
+# Artifact Hunt
 
-## Project Purpose
-Country Explorer JS is a web application that helps users discover and compare countries using real API data.
+Artifact Hunt is a web application idea for my milestone project. The purpose of this project is to help users explore real museum artifacts in a simple and interactive way while I apply the JavaScript concepts covered in class, especially asynchronous programming, API integration, and array methods.
 
-The project is designed to practice JavaScript fundamentals from class, especially asynchronous programming (`fetch`, `async/await`, promises), array higher-order functions, and modular code structure.
+This project uses The Metropolitan Museum of Art Collection API. The base URL is `https://collectionapi.metmuseum.org/public/collection/v1`. The endpoint templates are `/search?hasImages=true&q={keyword}` and `/objects/{objectID}`. Working examples are `https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=samurai` and `https://collectionapi.metmuseum.org/public/collection/v1/objects/436535`.
 
-## Public API Used
-- API: REST Countries API
-- Base URL: `https://restcountries.com`
-- Endpoint used: `https://restcountries.com/v3.1/all`
+The planned features include keyword-based artifact search, filtering results by department, image availability, and date range, and sorting results by title, year, or artist name. The interface will show artifact cards with key details such as image, title, artist, and period. I also plan to include loading and error states so the app behaves properly during API requests.
 
-Example endpoint with selected fields:
-`https://restcountries.com/v3.1/all?fields=name,capital,region,subregion,population,area,flags`
+The technologies involved in this project are HTML, CSS, JavaScript (ES6 modules), NPM, and the Fetch API. Git and GitHub will be used for version control and submission.
 
-## Planned Features
-- Search countries by name and capital
-- Filter countries by region
-- Filter countries by population range
-- Sort countries by:
-  - Name (A-Z / Z-A)
-  - Population (Low-High / High-Low)
-  - Area (Low-High / High-Low)
-- Responsive country cards with key details (flag, name, capital, region, population, area)
-- Loading and error states during API requests
+To set up and run the project, clone the repository, move into the project folder, and start a local server. A basic run flow is:
 
-## How Course Topics Are Applied
-- NPM for project initialization and scripts
-- ES6 Modules (`import` / `export`) for separating API, UI, and logic
-- Async JavaScript with `async/await`, promises, and `fetch`
-- Array HOFs (`map`, `filter`, `find`, `sort`, `forEach`) for search/filter/sort/render operations
-- Callback + `setTimeout` for debounced search (planned bonus)
-
-## Technologies Involved
-- HTML5
-- CSS3
-- Vanilla JavaScript (ES6+)
-- NPM
-- REST API (REST Countries)
-- Git and GitHub
-
-## Proposed Project Structure
-```text
-country-explorer-js/
-  index.html
-  style.css
-  src/
-    main.js
-    api.js
-    filters.js
-    render.js
+```bash
+git clone https://github.com/singhshouryat2-maker/artifact-hunt.git
+cd artifact-hunt
+npx serve .
 ```
 
-## Setup and Run (Basic)
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/country-explorer-js.git
-   ```
-2. Go to the project folder:
-   ```bash
-   cd country-explorer-js
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the project:
-   ```bash
-   npm run start
-   ```
+If npm dependencies are added in later milestones, `npm install` should be run before starting the project.
 
-## Milestone Scope Note
-This README is prepared for **Milestone 1 (planning and clarity)**. Core implementation starts in Milestone 2.
-
-## Milestone Plan
-- Milestone 1: Idea, API selection, GitHub repo, README
-- Milestone 2: API integration + dynamic rendering + responsive layout
-- Milestone 3: Search/filter/sort using array HOFs + interactive features
-- Milestone 4: Refactor, final documentation, deployment
+This README is prepared for Milestone 1 planning, and full implementation will continue in the next milestones.
